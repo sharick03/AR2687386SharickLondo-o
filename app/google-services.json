@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "871593270630",
+    "project_id": "ar2687386sharicklondono",
+    "storage_bucket": "ar2687386sharicklondono.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871593270630:android:66ede05908673e65eb3ca7",
+        "android_client_info": {
+          "package_name": "co.edu.sena.ar2687386sharicklondono"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChbRQueAOZh-9dAW6Uu2w55Z7uoBgBKXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
