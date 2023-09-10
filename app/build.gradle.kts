@@ -3,8 +3,12 @@ plugins {
     id("org.jetbrains.kotlin.android")
     // Add the Google services Gradle plugin
     id("com.google.gms.google-services")
+    //add hilt dependency
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 
     }
+
 
 android {
     namespace = "co.edu.sena.ar2687386sharicklondono"
@@ -33,11 +37,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_7
+        targetCompatibility = JavaVersion.VERSION_1_7
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -53,13 +57,16 @@ android {
 }
 
 dependencies {
-
     // Import the Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:32.2.3"))
+    //firebase auth and firestore
     implementation("com.google.firebase:firebase-auth-ktx:22.1.1")
     implementation("com.google.firebase:firebase-firestore-ktx:24.7.1")
-
     //add hilt dependencies
+    implementation("com.android.support:support-annotations:28.0.0")
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
+
 
 
     implementation("androidx.core:core-ktx:1.12.0")
@@ -78,3 +85,5 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
+
+
